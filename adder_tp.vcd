@@ -1,0 +1,54 @@
+$date
+	Wed May 13 23:51:45 2020
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module adder_tp $end
+$var wire 4 ! q [3:0] $end
+$var reg 4 " a [3:0] $end
+$var reg 4 # b [3:0] $end
+$scope module A1 $end
+$var wire 4 $ a [3:0] $end
+$var wire 4 % b [3:0] $end
+$var wire 4 & q [3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 &
+b0 %
+b0 $
+b0 #
+b0 "
+b0 !
+$end
+#1000
+b1010 #
+b1010 %
+b1111 !
+b1111 &
+b101 "
+b101 $
+#2000
+b1 !
+b1 &
+b111 "
+b111 $
+#3000
+b1111 #
+b1111 %
+b0 !
+b0 &
+b1 "
+b1 $
+#4000
+b1110 !
+b1110 &
+b1111 "
+b1111 $
+#5000
