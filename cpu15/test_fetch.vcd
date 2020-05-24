@@ -1,0 +1,103 @@
+$date
+	Sun May 24 22:50:58 2020
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module FETCH_TEST $end
+$scope module fetch_inst $end
+$var wire 1 ! CLK_FT $end
+$var wire 8 " P_COUNT [7:0] $end
+$var reg 15 # PROM_OUT [14:0] $end
+$scope function rom $end
+$var reg 8 $ addr [7:0] $end
+$var reg 15 % rom [14:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx %
+bx $
+bx #
+bx "
+0!
+$end
+#10000
+1!
+#20000
+0!
+#30000
+1!
+#40000
+0!
+#50000
+1!
+#60000
+0!
+#70000
+1!
+#80000
+0!
+#90000
+1!
+#100000
+0!
+#110000
+1!
+#120000
+0!
+#130000
+1!
+#140000
+0!
+#150000
+1!
+#160000
+0!
+#170000
+1!
+#180000
+0!
+#190000
+1!
+#200000
+0!
+#210000
+1!
+#220000
+0!
+#230000
+1!
+#240000
+0!
+#250000
+1!
+#260000
+0!
+#270000
+1!
+#280000
+0!
+#290000
+1!
+#300000
+0!
+#310000
+1!
+#320000
+0!
+#330000
+1!
+#340000
+0!
+#350000
+1!
+#360000
+0!
+#370000
+1!
