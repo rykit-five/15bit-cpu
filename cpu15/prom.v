@@ -1,4 +1,4 @@
-module fetch(CLK_FT, P_COUNT, PROM_OUT);
+module prom(CLK_FT, P_COUNT, PROM_OUT);
 input CLK_FT;
 input [7:0] P_COUNT;
 output reg [14:0] PROM_OUT;
