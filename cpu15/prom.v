@@ -3,8 +3,7 @@ input CLK_FT;
 input [7:0] P_COUNT;
 output reg [14:0] PROM_OUT;
 
-always @ (posedge CLK_FT)
-begin
+always @ (posedge CLK_FT) begin
     case (P_COUNT)
         8'h00: PROM_OUT = 15'b100100000000000;  // -- ldh Reg0, 0
         8'h01: PROM_OUT = 15'b100000000000000;  // -- ldl Reg0, 0
