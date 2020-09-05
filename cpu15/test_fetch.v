@@ -18,7 +18,7 @@ module FETCH_TEST();
     initial begin
         $dumpfile("test_fetch.vcd");
         $dumpvars(0, fetch_inst);
-        $monitor("%t: p_count=%h, prom_out=%b", $time, p_count, prom_out);
+        $monitor("%t: p_count=%h, prom_out=%h", $time, p_count, prom_out);
     end
 
     // initial begin
@@ -69,6 +69,21 @@ module FETCH_TEST();
         p_count <= 8'h07;
       #10
         p_count <= 8'h08;
+      #10
+        p_count <= 8'h09;
+      #10
+        p_count <= 8'h0a;
+      #10
+        p_count <= 8'h0b;
+      #10
+        p_count <= 8'h0c;
+      #10
+        p_count <= 8'h0d;
+      #10
+        p_count <= 8'h0e;
+      #10
+        p_count <= 8'h0f;
+      #10
       $finish;
     end
 
