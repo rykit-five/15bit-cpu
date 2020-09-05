@@ -1,0 +1,147 @@
+$date
+	Sat Sep  5 17:38:03 2020
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module REG_DC_TEST $end
+$scope module reg_dc_inst $end
+$var wire 1 ! CLK_DC $end
+$var wire 3 " N_REG_IN [2:0] $end
+$var wire 16 # REG0 [15:0] $end
+$var wire 16 $ REG1 [15:0] $end
+$var wire 16 % REG2 [15:0] $end
+$var wire 16 & REG3 [15:0] $end
+$var wire 16 ' REG4 [15:0] $end
+$var wire 16 ( REG5 [15:0] $end
+$var wire 16 ) REG6 [15:0] $end
+$var wire 16 * REG7 [15:0] $end
+$var reg 3 + N_REG_OUT [2:0] $end
+$var reg 16 , REG_OUT [15:0] $end
+$scope function reg_out $end
+$var reg 3 - n_reg_in [2:0] $end
+$var reg 16 . reg0 [15:0] $end
+$var reg 16 / reg1 [15:0] $end
+$var reg 16 0 reg2 [15:0] $end
+$var reg 16 1 reg3 [15:0] $end
+$var reg 16 2 reg4 [15:0] $end
+$var reg 16 3 reg5 [15:0] $end
+$var reg 16 4 reg6 [15:0] $end
+$var reg 16 5 reg7 [15:0] $end
+$var reg 16 6 reg_out [15:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx 6
+bx 5
+bx 4
+bx 3
+bx 2
+bx 1
+bx 0
+bx /
+bx .
+bx -
+bx ,
+bx +
+b1000000010001101 *
+b11010010110001 )
+b0 (
+b110010010100110 '
+b1010101111001101 &
+b111111001101110 %
+b111011000101000 $
+b110010100110101 #
+bx "
+0!
+$end
+#5
+b110010100110101 .
+b111011000101000 /
+b111111001101110 0
+b1010101111001101 1
+b110010010100110 2
+b0 3
+b11010010110001 4
+b1000000010001101 5
+1!
+#10
+0!
+b0 "
+#15
+b110010100110101 ,
+b0 +
+b110010100110101 6
+b0 -
+1!
+#20
+0!
+b1 "
+#25
+b111011000101000 ,
+b1 +
+b111011000101000 6
+b1 -
+1!
+#30
+0!
+b10 "
+#35
+b111111001101110 ,
+b10 +
+b111111001101110 6
+b10 -
+1!
+#40
+0!
+b11 "
+#45
+b1010101111001101 ,
+b11 +
+b1010101111001101 6
+b11 -
+1!
+#50
+0!
+b100 "
+#55
+b110010010100110 ,
+b100 +
+b110010010100110 6
+b100 -
+1!
+#60
+0!
+b101 "
+#65
+b0 ,
+b101 +
+b0 6
+b101 -
+1!
+#70
+0!
+b110 "
+#75
+b11010010110001 ,
+b110 +
+b11010010110001 6
+b110 -
+1!
+#80
+0!
+b111 "
+#85
+b1000000010001101 ,
+b111 +
+b1000000010001101 6
+b111 -
+1!
+#90
+0!
