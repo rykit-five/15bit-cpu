@@ -1,0 +1,69 @@
+$date
+	Sat Sep  5 11:33:43 2020
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module adder4sim $end
+$var wire 4 ! rslt [3:0] $end
+$var wire 1 " cy $end
+$var reg 4 # in1 [3:0] $end
+$var reg 4 $ in2 [3:0] $end
+$scope module adder4 $end
+$var wire 4 % in_data1 [3:0] $end
+$var wire 4 & in_data2 [3:0] $end
+$var wire 5 ' rslt [4:0] $end
+$var wire 4 ( out_data [3:0] $end
+$var wire 1 " cy $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx (
+bx '
+bx &
+bx %
+bx $
+bx #
+x"
+bx !
+$end
+#10
+0"
+b0 !
+b0 (
+b0 '
+b0 $
+b0 &
+b0 #
+b0 %
+#20
+b110 !
+b110 (
+b110 '
+b11 $
+b11 &
+b110 #
+b110 %
+#30
+1"
+b1000 !
+b1000 (
+b11000 '
+b1100 $
+b1100 &
+b111 #
+b111 %
+#40
+b1110 !
+b1110 (
+b11110 '
+b1111 $
+b1111 &
+b1111 #
+b1111 %
+#50
