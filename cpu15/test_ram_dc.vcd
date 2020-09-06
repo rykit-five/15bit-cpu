@@ -1,0 +1,161 @@
+$date
+	Sun Sep  6 14:10:09 2020
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module RAM_DC_TEST $end
+$scope module ram_dc_inst $end
+$var wire 1 ! CLK_DC $end
+$var wire 16 " IO65_IN [15:0] $end
+$var wire 16 # RAM0 [15:0] $end
+$var wire 16 $ RAM1 [15:0] $end
+$var wire 16 % RAM2 [15:0] $end
+$var wire 16 & RAM3 [15:0] $end
+$var wire 16 ' RAM4 [15:0] $end
+$var wire 16 ( RAM5 [15:0] $end
+$var wire 16 ) RAM6 [15:0] $end
+$var wire 16 * RAM7 [15:0] $end
+$var wire 8 + RAM_AD_IN [7:0] $end
+$var reg 8 , RAM_AD_OUT [7:0] $end
+$var reg 16 - RAM_OUT [15:0] $end
+$scope function ram_out $end
+$var reg 16 . io65_in [15:0] $end
+$var reg 16 / ram0 [15:0] $end
+$var reg 16 0 ram1 [15:0] $end
+$var reg 16 1 ram2 [15:0] $end
+$var reg 16 2 ram3 [15:0] $end
+$var reg 16 3 ram4 [15:0] $end
+$var reg 16 4 ram5 [15:0] $end
+$var reg 16 5 ram6 [15:0] $end
+$var reg 16 6 ram7 [15:0] $end
+$var reg 8 7 ram_ad_in [7:0] $end
+$var reg 16 8 ram_out [15:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx 8
+bx 7
+bx 6
+bx 5
+bx 4
+bx 3
+bx 2
+bx 1
+bx 0
+bx /
+bx .
+bx -
+bx ,
+bx +
+b1000000010001101 *
+b11010010110001 )
+b0 (
+b110010010100110 '
+b1010101111001101 &
+b111111001101110 %
+b111011000101000 $
+b110010100110101 #
+b11001001001111 "
+0!
+$end
+#5
+b110010100110101 /
+b111011000101000 0
+b111111001101110 1
+b1010101111001101 2
+b110010010100110 3
+b0 4
+b11010010110001 5
+b1000000010001101 6
+b11001001001111 .
+1!
+#10
+0!
+b0 +
+#15
+b110010100110101 -
+b0 ,
+b110010100110101 8
+b0 7
+1!
+#20
+0!
+b1 +
+#25
+b111011000101000 -
+b1 ,
+b111011000101000 8
+b1 7
+1!
+#30
+0!
+b10 +
+#35
+b111111001101110 -
+b10 ,
+b111111001101110 8
+b10 7
+1!
+#40
+0!
+b11 +
+#45
+b1010101111001101 -
+b11 ,
+b1010101111001101 8
+b11 7
+1!
+#50
+0!
+b100 +
+#55
+b110010010100110 -
+b100 ,
+b110010010100110 8
+b100 7
+1!
+#60
+0!
+b101 +
+#65
+b0 -
+b101 ,
+b0 8
+b101 7
+1!
+#70
+0!
+b110 +
+#75
+b11010010110001 -
+b110 ,
+b11010010110001 8
+b110 7
+1!
+#80
+0!
+b111 +
+#85
+b1000000010001101 -
+b111 ,
+b1000000010001101 8
+b111 7
+1!
+#90
+0!
+b1000001 +
+#95
+b11001001001111 -
+b1000001 ,
+b11001001001111 8
+b1000001 7
+1!
+#100
+0!
