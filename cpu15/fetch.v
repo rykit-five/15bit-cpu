@@ -8,6 +8,7 @@ module fetch(CLK_FT, P_COUNT, PROM_OUT);
     function [14:0] rom;
         input [7:0] addr;
         
+        begin
         case (addr)
             8'h00: rom = 15'b100100000000000;  // -- ldh Reg0, 0
             8'h01: rom = 15'b100000000000000;  // -- ldl Reg0, 0
@@ -26,6 +27,7 @@ module fetch(CLK_FT, P_COUNT, PROM_OUT);
             8'h0e: rom = 15'b111100000000000;  // -- hlt
             8'h0f: rom = 15'b100100000000000;  // -- nop
         endcase
+        end
 
         // assign memory[0]  = 15'b100100000000000;  // -- ldh Reg0, 0
         // assign memory[1]  = 15'b100000000000000;  // -- ldl Reg0, 0
@@ -49,7 +51,8 @@ module fetch(CLK_FT, P_COUNT, PROM_OUT);
         // end
     endfunction
 
-    always @ (posedge CLK_FT) begin
+    always @ (posedge CLK_FT) 
+    begin
         PROM_OUT <= rom(P_COUNT);
     end
 

@@ -27,18 +27,18 @@ module ram_dc(CLK_DC,
         input   [15:0]  io65_in;
 
         begin
-            case (ram_ad_in)
-                8'b00000000: ram_out = ram0;
-                8'b00000001: ram_out = ram1;
-                8'b00000010: ram_out = ram2;
-                8'b00000011: ram_out = ram3;
-                8'b00000100: ram_out = ram4;
-                8'b00000101: ram_out = ram5;
-                8'b00000110: ram_out = ram6;
-                8'b00000111: ram_out = ram7;
-                8'b01000001: ram_out = io65_in;
-                default: ram_out = 16'hxxxx;
-            endcase
+        case (ram_ad_in)
+            8'b00000000: ram_out = ram0;
+            8'b00000001: ram_out = ram1;
+            8'b00000010: ram_out = ram2;
+            8'b00000011: ram_out = ram3;
+            8'b00000100: ram_out = ram4;
+            8'b00000101: ram_out = ram5;
+            8'b00000110: ram_out = ram6;
+            8'b00000111: ram_out = ram7;
+            8'b01000001: ram_out = io65_in;
+            default: ram_out = 16'hxxxx;
+        endcase
         end    
     endfunction
 
