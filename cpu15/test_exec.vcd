@@ -1,0 +1,108 @@
+$date
+	Sat Sep 12 15:40:45 2020
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module EXEC_TEST $end
+$scope module exec_inst $end
+$var wire 1 ! CLK_EX $end
+$var wire 4 " OP_CODE [3:0] $end
+$var wire 8 # OP_DATA [7:0] $end
+$var wire 8 $ P_COUNT [7:0] $end
+$var wire 16 % RAM_OUT [15:0] $end
+$var wire 16 & REG_A [15:0] $end
+$var wire 16 ' REG_B [15:0] $end
+$var wire 1 ( RESET_N $end
+$var reg 16 ) RAM_IN [15:0] $end
+$var reg 1 * RAM_WEN $end
+$var reg 16 + REG_IN [15:0] $end
+$var reg 1 , REG_WEN $end
+$var reg 1 - cmp_flag $end
+$var reg 8 . pc [7:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 .
+0-
+x,
+bx +
+x*
+bx )
+x(
+b1 '
+b110001110101000 &
+b1000000000000000 %
+b0 $
+b0 #
+bx "
+0!
+$end
+#5
+1!
+#10
+0!
+b100011 #
+b1001 "
+#15
+b1 $
+b1 .
+0*
+1,
+b10001110101000 +
+1!
+#20
+0!
+b111 #
+b1000 "
+#25
+b10 $
+b10 .
+b110001100000111 +
+1!
+#30
+0!
+b1 "
+#35
+b11 $
+b11 .
+b110001110101001 +
+1!
+#40
+0!
+b100 "
+#45
+b100 $
+b100 .
+1!
+#50
+0!
+b1010 "
+#55
+b101 $
+b101 .
+0,
+1!
+#60
+0!
+1(
+#65
+b110 $
+b110 .
+1!
+#70
+0!
+b1110 "
+#75
+b111 $
+b111 .
+1*
+b110001110101000 )
+1!
+#80
+0!

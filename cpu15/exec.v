@@ -53,7 +53,9 @@ module exec(CLK_EX,
     always @ (posedge CLK_EX) begin
         if (RESET_N == 1'b0) begin
             pc <= 8'h00;
-        end else begin
+            cmp_flag <= 1'b0;
+        end 
+        else begin
             case (OP_CODE)
                 `MOV: begin
                     REG_IN <= REG_B;
@@ -98,19 +100,19 @@ module exec(CLK_EX,
                     pc <= pc + 1'b1;
                 end
                 `SRA: begin
-                    REG_IN <= REG_A[15] | REG_A[15:1];
+                    REG_IN <= {REG_A[15], REG_A[15:1]};
                     REG_WEN <= 1'b1;
                     RAM_WEN <= 1'b0;
                     pc <= pc + 1'b1;
                 end
                 `LDL: begin
-                    REG_IN <= (REG_A & 16'hff00) | OP_DATA;
+                    REG_IN <= {REG_A[15:8], OP_DATA};
                     REG_WEN <= 1'b1;
                     RAM_WEN <= 1'b0;
                     pc <= pc + 1'b1;
                 end
                 `LDH: begin
-                    REG_IN <= (REG_A & 16'h00ff) | OP_DATA;
+                    REG_IN <= {OP_DATA, REG_A[7:0]};
                     REG_WEN <= 1'b1;
                     RAM_WEN <= 1'b0;
                     pc <= pc + 1'b1;
@@ -153,13 +155,13 @@ module exec(CLK_EX,
                     REG_WEN <= 1'b0;
                     RAM_WEN <= 1'b0;
                 end
-                default: begin
-                    REG_IN <= 16'hxxxx;
-                    RAM_IN <= 16'hxxxx;
-                    REG_WEN <= 1'bx;
-                    RAM_WEN <= 1'bx;
-                    pc <= 1'bx;
-                end
+                // default: 
+                    // REG_IN <= 16'hxxxx;
+                    // RAM_IN <= 16'hxxxx;
+                    // REG_WEN <= 1'bx;
+                    // RAM_WEN <= 1'bx;
+                    // pc <= 8'bxx;
+                // end
             endcase
         end
     end
