@@ -4,7 +4,11 @@
 `define WB_STAGE 2'b11
 
 
-module clk_gen(CLK, CLK_FT, CLK_DC, CLK_EX, CLK_WB);
+module clk_gen(CLK, 
+               CLK_FT, 
+               CLK_DC, 
+               CLK_EX, 
+               CLK_WB);
     input           CLK;
     output          CLK_FT, CLK_DC, CLK_EX, CLK_WB;
 
