@@ -32,22 +32,12 @@ module REG_WB_TEST();
     initial begin
         $dumpfile("test_reg_wb.vcd");
         $dumpvars(0, reg_wb_inst);
-        $monitor("%t: reset_n=%b, n_reg=%b, reg_in=%h, reg_wen=%b => reg_0=%h, reg_1=%h, reg_2=%h, reg_3=%h, reg_4=%h, reg_5=%h, reg_6=%h, reg_7=%h", $time, reset_n, n_reg, reg_in, reg_wen, reg_0, reg_1, reg_2, reg_3, reg_4, reg_5, reg_6, reg_7);
+        $monitor("%t: reset_n=%b, n_reg=%b, reg_in=%h, reg_wen=%b => REG=%h, REG=%h, reg_2=%h, reg_3=%h, reg_4=%h, reg_5=%h, reg_6=%h, reg_7=%h", $time, reset_n, n_reg, reg_in, reg_wen, reg_0, reg_1, reg_2, reg_3, reg_4, reg_5, reg_6, reg_7);
     end
 
     // テスト信号の発生
     initial begin
         clk_wb <= 1'b0;
-        // reset_n <= 1'b0;
-        // reg_wen <= 1'b0;
-        // reg_0 <= 16'h6535;
-        // reg_1 <= 16'h7628;
-        // reg_2 <= 16'h7e6e;
-        // reg_3 <= 16'habcd;
-        // reg_4 <= 16'h64a6;
-        // reg_5 <= 16'h0000;
-        // reg_6 <= 16'h34b1;
-        // reg_7 <= 16'h808d;
     end
 
     always #5 begin

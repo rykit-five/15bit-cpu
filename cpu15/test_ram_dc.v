@@ -1,7 +1,7 @@
 module RAM_DC_TEST();
     reg             clk_dc;
     reg     [7:0]   ram_ad_in;
-    reg     [15:0]  ram0, ram1, ram2, ram3, ram4, ram5, ram6, ram7;
+    reg     [15:0]  ram_0, ram_1, ram_2, ram_3, ram_4, ram_5, ram_6, ram_7;
     reg     [15:0]  io65_in;
     wire    [7:0]   ram_ad_out;
     wire    [15:0]  ram_out;
@@ -9,14 +9,14 @@ module RAM_DC_TEST();
     ram_dc ram_dc_inst(
         .CLK_DC(clk_dc), 
         .RAM_AD_IN(ram_ad_in), 
-        .RAM0(ram0),
-        .RAM1(ram1),
-        .RAM2(ram2),
-        .RAM3(ram3),
-        .RAM4(ram4),
-        .RAM5(ram5),
-        .RAM6(ram6),
-        .RAM7(ram7),
+        .RAM_0(ram_0),
+        .RAM_1(ram_1),
+        .RAM_2(ram_2),
+        .RAM_3(ram_3),
+        .RAM_4(ram_4),
+        .RAM_5(ram_5),
+        .RAM_6(ram_6),
+        .RAM_7(ram_7),
         .IO65_IN(io65_in),
         .RAM_AD_OUT(ram_ad_out), 
         .RAM_OUT(ram_out)
@@ -31,14 +31,14 @@ module RAM_DC_TEST();
     // テスト信号の発生
     initial begin
         clk_dc <= 1'b0;
-        ram0 <= 16'h6535;
-        ram1 <= 16'h7628;
-        ram2 <= 16'h7e6e;
-        ram3 <= 16'habcd;
-        ram4 <= 16'h64a6;
-        ram5 <= 16'h0000;
-        ram6 <= 16'h34b1;
-        ram7 <= 16'h808d;
+        ram_0 <= 16'h6535;
+        ram_1 <= 16'h7628;
+        ram_2 <= 16'h7e6e;
+        ram_3 <= 16'habcd;
+        ram_4 <= 16'h64a6;
+        ram_5 <= 16'h0000;
+        ram_6 <= 16'h34b1;
+        ram_7 <= 16'h808d;
         io65_in <= 16'h324f;
     end
 

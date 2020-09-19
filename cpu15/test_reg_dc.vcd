@@ -1,5 +1,5 @@
 $date
-	Sat Sep  5 17:38:03 2020
+	Sat Sep 19 16:46:53 2020
 $end
 $version
 	Icarus Verilog
@@ -11,26 +11,26 @@ $scope module REG_DC_TEST $end
 $scope module reg_dc_inst $end
 $var wire 1 ! CLK_DC $end
 $var wire 3 " N_REG_IN [2:0] $end
-$var wire 16 # REG0 [15:0] $end
-$var wire 16 $ REG1 [15:0] $end
-$var wire 16 % REG2 [15:0] $end
-$var wire 16 & REG3 [15:0] $end
-$var wire 16 ' REG4 [15:0] $end
-$var wire 16 ( REG5 [15:0] $end
-$var wire 16 ) REG6 [15:0] $end
-$var wire 16 * REG7 [15:0] $end
+$var wire 16 # REG_0 [15:0] $end
+$var wire 16 $ REG_1 [15:0] $end
+$var wire 16 % REG_2 [15:0] $end
+$var wire 16 & REG_3 [15:0] $end
+$var wire 16 ' REG_4 [15:0] $end
+$var wire 16 ( REG_5 [15:0] $end
+$var wire 16 ) REG_6 [15:0] $end
+$var wire 16 * REG_7 [15:0] $end
 $var reg 3 + N_REG_OUT [2:0] $end
 $var reg 16 , REG_OUT [15:0] $end
 $scope function reg_out $end
 $var reg 3 - n_reg_in [2:0] $end
-$var reg 16 . reg0 [15:0] $end
-$var reg 16 / reg1 [15:0] $end
-$var reg 16 0 reg2 [15:0] $end
-$var reg 16 1 reg3 [15:0] $end
-$var reg 16 2 reg4 [15:0] $end
-$var reg 16 3 reg5 [15:0] $end
-$var reg 16 4 reg6 [15:0] $end
-$var reg 16 5 reg7 [15:0] $end
+$var reg 16 . reg_0 [15:0] $end
+$var reg 16 / reg_1 [15:0] $end
+$var reg 16 0 reg_2 [15:0] $end
+$var reg 16 1 reg_3 [15:0] $end
+$var reg 16 2 reg_4 [15:0] $end
+$var reg 16 3 reg_5 [15:0] $end
+$var reg 16 4 reg_6 [15:0] $end
+$var reg 16 5 reg_7 [15:0] $end
 $var reg 16 6 reg_out [15:0] $end
 $upscope $end
 $upscope $end

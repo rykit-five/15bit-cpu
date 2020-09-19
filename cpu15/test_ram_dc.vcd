@@ -1,5 +1,5 @@
 $date
-	Sun Sep  6 14:10:09 2020
+	Sat Sep 19 16:46:28 2020
 $end
 $version
 	Icarus Verilog
@@ -11,27 +11,27 @@ $scope module RAM_DC_TEST $end
 $scope module ram_dc_inst $end
 $var wire 1 ! CLK_DC $end
 $var wire 16 " IO65_IN [15:0] $end
-$var wire 16 # RAM0 [15:0] $end
-$var wire 16 $ RAM1 [15:0] $end
-$var wire 16 % RAM2 [15:0] $end
-$var wire 16 & RAM3 [15:0] $end
-$var wire 16 ' RAM4 [15:0] $end
-$var wire 16 ( RAM5 [15:0] $end
-$var wire 16 ) RAM6 [15:0] $end
-$var wire 16 * RAM7 [15:0] $end
+$var wire 16 # RAM_0 [15:0] $end
+$var wire 16 $ RAM_1 [15:0] $end
+$var wire 16 % RAM_2 [15:0] $end
+$var wire 16 & RAM_3 [15:0] $end
+$var wire 16 ' RAM_4 [15:0] $end
+$var wire 16 ( RAM_5 [15:0] $end
+$var wire 16 ) RAM_6 [15:0] $end
+$var wire 16 * RAM_7 [15:0] $end
 $var wire 8 + RAM_AD_IN [7:0] $end
 $var reg 8 , RAM_AD_OUT [7:0] $end
 $var reg 16 - RAM_OUT [15:0] $end
 $scope function ram_out $end
 $var reg 16 . io65_in [15:0] $end
-$var reg 16 / ram0 [15:0] $end
-$var reg 16 0 ram1 [15:0] $end
-$var reg 16 1 ram2 [15:0] $end
-$var reg 16 2 ram3 [15:0] $end
-$var reg 16 3 ram4 [15:0] $end
-$var reg 16 4 ram5 [15:0] $end
-$var reg 16 5 ram6 [15:0] $end
-$var reg 16 6 ram7 [15:0] $end
+$var reg 16 / ram_0 [15:0] $end
+$var reg 16 0 ram_1 [15:0] $end
+$var reg 16 1 ram_2 [15:0] $end
+$var reg 16 2 ram_3 [15:0] $end
+$var reg 16 3 ram_4 [15:0] $end
+$var reg 16 4 ram_5 [15:0] $end
+$var reg 16 5 ram_6 [15:0] $end
+$var reg 16 6 ram_7 [15:0] $end
 $var reg 8 7 ram_ad_in [7:0] $end
 $var reg 16 8 ram_out [15:0] $end
 $upscope $end

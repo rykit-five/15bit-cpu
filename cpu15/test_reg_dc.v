@@ -1,21 +1,21 @@
 module REG_DC_TEST();
     reg             clk_dc;
     reg     [2:0]   n_reg_in;
-    reg     [15:0]  reg0, reg1, reg2, reg3, reg4, reg5, reg6, reg7;
+    reg     [15:0]  reg_0, reg_1, reg_2, reg_3, reg_4, reg_5, reg_6, reg_7;
     wire    [2:0]   n_reg_out;
     wire    [15:0]  reg_out;
 
     reg_dc reg_dc_inst(
         .CLK_DC(clk_dc), 
         .N_REG_IN(n_reg_in), 
-        .REG0(reg0),
-        .REG1(reg1),
-        .REG2(reg2),
-        .REG3(reg3),
-        .REG4(reg4),
-        .REG5(reg5),
-        .REG6(reg6),
-        .REG7(reg7),
+        .REG_0(reg_0),
+        .REG_1(reg_1),
+        .REG_2(reg_2),
+        .REG_3(reg_3),
+        .REG_4(reg_4),
+        .REG_5(reg_5),
+        .REG_6(reg_6),
+        .REG_7(reg_7),
         .N_REG_OUT(n_reg_out), 
         .REG_OUT(reg_out)
     );
@@ -29,14 +29,14 @@ module REG_DC_TEST();
     // テスト信号の発生
     initial begin
         clk_dc <= 1'b0;
-        reg0 <= 16'h6535;
-        reg1 <= 16'h7628;
-        reg2 <= 16'h7e6e;
-        reg3 <= 16'habcd;
-        reg4 <= 16'h64a6;
-        reg5 <= 16'h0000;
-        reg6 <= 16'h34b1;
-        reg7 <= 16'h808d;
+        reg_0 <= 16'h6535;
+        reg_1 <= 16'h7628;
+        reg_2 <= 16'h7e6e;
+        reg_3 <= 16'habcd;
+        reg_4 <= 16'h64a6;
+        reg_5 <= 16'h0000;
+        reg_6 <= 16'h34b1;
+        reg_7 <= 16'h808d;
     end
 
     always #5 begin
