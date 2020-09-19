@@ -1,0 +1,107 @@
+$date
+	Sat Sep 19 16:31:31 2020
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module RAM_WB_TEST $end
+$scope module ram_wb_inst $end
+$var wire 1 ! CLK_WB $end
+$var wire 8 " RAM_ADDR [7:0] $end
+$var wire 16 # RAM_IN [15:0] $end
+$var wire 1 $ RAM_WEN $end
+$var reg 16 % IO64_OUT [15:0] $end
+$var reg 16 & RAM_0 [15:0] $end
+$var reg 16 ' RAM_1 [15:0] $end
+$var reg 16 ( RAM_2 [15:0] $end
+$var reg 16 ) RAM_3 [15:0] $end
+$var reg 16 * RAM_4 [15:0] $end
+$var reg 16 + RAM_5 [15:0] $end
+$var reg 16 , RAM_6 [15:0] $end
+$var reg 16 - RAM_7 [15:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx -
+bx ,
+bx +
+bx *
+bx )
+bx (
+bx '
+bx &
+bx %
+x$
+bx #
+bx "
+0!
+$end
+#5
+1!
+#10
+0!
+0$
+b1011111010101111 #
+b0 "
+#15
+1!
+#20
+0!
+1$
+b1 "
+#25
+b1011111010101111 '
+1!
+#30
+0!
+0$
+b10 "
+#35
+1!
+#40
+0!
+1$
+b11 "
+#45
+b1011111010101111 )
+1!
+#50
+0!
+0$
+b100 "
+#55
+1!
+#60
+0!
+1$
+b101 "
+#65
+b1011111010101111 +
+1!
+#70
+0!
+0$
+b110 "
+#75
+1!
+#80
+0!
+1$
+b111 "
+#85
+b1011111010101111 -
+1!
+#90
+0!
+b1100101011111110 #
+b1000000 "
+#95
+b1100101011111110 %
+1!
+#100
+0!
