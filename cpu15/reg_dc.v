@@ -1,6 +1,15 @@
-module reg_dc(CLK_DC, N_REG_IN, 
-              REG_0, REG_1, REG_2, REG_3, REG_4, REG_5, REG_6, REG_7, 
-              N_REG_OUT, REG_OUT);
+module reg_dc(CLK_DC, 
+              N_REG_IN, 
+              REG_0, 
+              REG_1, 
+              REG_2, 
+              REG_3, 
+              REG_4, 
+              REG_5, 
+              REG_6, 
+              REG_7, 
+              N_REG_OUT, 
+              REG_OUT);
               
     input           CLK_DC;
     input   [2:0]   N_REG_IN;

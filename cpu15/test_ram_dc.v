@@ -2,7 +2,7 @@ module RAM_DC_TEST();
     reg             clk_dc;
     reg     [7:0]   ram_ad_in;
     reg     [15:0]  ram_0, ram_1, ram_2, ram_3, ram_4, ram_5, ram_6, ram_7;
-    reg     [15:0]  io65_in;
+    reg     [15:0]  io64_in;
     wire    [7:0]   ram_ad_out;
     wire    [15:0]  ram_out;
 
@@ -17,7 +17,7 @@ module RAM_DC_TEST();
         .RAM_5(ram_5),
         .RAM_6(ram_6),
         .RAM_7(ram_7),
-        .IO65_IN(io65_in),
+        .IO64_IN(io64_in),
         .RAM_AD_OUT(ram_ad_out), 
         .RAM_OUT(ram_out)
     );
@@ -39,7 +39,7 @@ module RAM_DC_TEST();
         ram_5 <= 16'h0000;
         ram_6 <= 16'h34b1;
         ram_7 <= 16'h808d;
-        io65_in <= 16'h324f;
+        io64_in <= 16'h324f;
     end
 
     always #5 begin
