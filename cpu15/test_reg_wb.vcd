@@ -1,0 +1,114 @@
+$date
+	Sat Sep 19 16:10:00 2020
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module REG_WB_TEST $end
+$scope module reg_wb_inst $end
+$var wire 1 ! CLK_WB $end
+$var wire 3 " N_REG [2:0] $end
+$var wire 16 # REG_IN [15:0] $end
+$var wire 1 $ REG_WEN $end
+$var wire 1 % RESET_N $end
+$var reg 16 & REG_0 [15:0] $end
+$var reg 16 ' REG_1 [15:0] $end
+$var reg 16 ( REG_2 [15:0] $end
+$var reg 16 ) REG_3 [15:0] $end
+$var reg 16 * REG_4 [15:0] $end
+$var reg 16 + REG_5 [15:0] $end
+$var reg 16 , REG_6 [15:0] $end
+$var reg 16 - REG_7 [15:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx -
+bx ,
+bx +
+bx *
+bx )
+bx (
+bx '
+bx &
+x%
+x$
+bx #
+bx "
+0!
+$end
+#5
+1!
+#10
+0!
+0$
+b1011111010101111 #
+b0 "
+1%
+#15
+1!
+#20
+0!
+1$
+b1 "
+#25
+b1011111010101111 '
+1!
+#30
+0!
+0$
+b10 "
+#35
+1!
+#40
+0!
+1$
+b11 "
+#45
+b1011111010101111 )
+1!
+#50
+0!
+0%
+#55
+b0 -
+b0 ,
+b0 +
+b0 *
+b0 )
+b0 (
+b0 '
+b0 &
+1!
+#60
+0!
+0$
+b100 "
+#65
+1!
+#70
+0!
+1$
+b101 "
+#75
+1!
+#80
+0!
+0$
+b110 "
+1%
+#85
+1!
+#90
+0!
+1$
+b111 "
+#95
+b1011111010101111 -
+1!
+#100
+0!
