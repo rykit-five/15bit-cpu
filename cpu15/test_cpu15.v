@@ -4,7 +4,7 @@
 module CPU15_TEST();
     reg             clk;
     reg             reset_n;
-    wire    [15:0]  io64_in;
+    wire    [15:0]  io65_in;
     wire    [15:0]  io64_out;
 
     parameter       count_lim = 1000;
@@ -13,7 +13,7 @@ module CPU15_TEST();
     cpu15 cpu15_inst(
         .CLK(clk),
         .RESET_N(reset_n),
-        .IO64_IN(io64_in),
+        .IO65_IN(io65_in),
         .IO64_OUT(io64_out)
     );
 

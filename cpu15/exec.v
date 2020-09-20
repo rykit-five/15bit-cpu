@@ -118,19 +118,19 @@ module exec(CLK_EX,
                     pc <= pc + 1'b1;
                 end
                 `CMP: begin
-                    if (REG_A == REG_B) begin
+                    if (REG_A == REG_B)
                         cmp_flag <= 1'b1;
-                    end else begin
+                    else
                         cmp_flag <= 1'b0;
-                    end
                     REG_WEN <= 1'b0;
                     RAM_WEN <= 1'b0;
                     pc <= pc + 1'b1;
                 end
                 `JE: begin
-                    if (cmp_flag == 1'b0) begin
+                    if (cmp_flag == 1'b1)
                         pc <= OP_DATA;
-                    end
+                    else
+                        pc <= pc + 1'b1;
                     REG_WEN <= 1'b0;
                     RAM_WEN <= 1'b0;
                 end

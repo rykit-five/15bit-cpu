@@ -10,11 +10,11 @@
 
 module cpu15(CLK, 
              RESET_N, 
-             IO64_IN, 
+             IO65_IN, 
              IO64_OUT);
     input           CLK;
     input           RESET_N;
-    input   [15:0]  IO64_IN;
+    input   [15:0]  IO65_IN;
     output  [15:0]  IO64_OUT;
 
     /* Internal Signal */
@@ -124,7 +124,7 @@ module cpu15(CLK,
         .RAM_5(ram_5),
         .RAM_6(ram_6),
         .RAM_7(ram_7),
-        .IO64_IN(IO64_IN),
+        .IO65_IN(IO65_IN),
         .RAM_AD_OUT(ram_addr), 
         .RAM_OUT(ram_out)
     );
