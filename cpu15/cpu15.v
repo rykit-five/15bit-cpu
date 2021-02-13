@@ -113,21 +113,21 @@ module cpu15(CLK,
         .REG_OUT(reg_b)
     );
 
-    ram_dc CMP6_RAM_DC(
-        .CLK_DC(clk_dc), 
-        .RAM_AD_IN(prom_out[7:0]), 
-        .RAM_0(ram_0),
-        .RAM_1(ram_1),
-        .RAM_2(ram_2),
-        .RAM_3(ram_3),
-        .RAM_4(ram_4),
-        .RAM_5(ram_5),
-        .RAM_6(ram_6),
-        .RAM_7(ram_7),
-        .IO65_IN(IO65_IN),
-        .RAM_AD_OUT(ram_addr), 
-        .RAM_OUT(ram_out)
-    );
+    // ram_dc CMP6_RAM_DC(
+    //     .CLK_DC(clk_dc), 
+    //     .RAM_AD_IN(prom_out[7:0]), 
+    //     .RAM_0(ram_0),
+    //     .RAM_1(ram_1),
+    //     .RAM_2(ram_2),
+    //     .RAM_3(ram_3),
+    //     .RAM_4(ram_4),
+    //     .RAM_5(ram_5),
+    //     .RAM_6(ram_6),
+    //     .RAM_7(ram_7),
+    //     .IO65_IN(IO65_IN),
+    //     .RAM_AD_OUT(ram_addr), 
+    //     .RAM_OUT(ram_out)
+    // );
     
     exec CMP7_EXEC(
         .CLK_EX(clk_ex),
@@ -160,20 +160,31 @@ module cpu15(CLK,
         .REG_7(reg_7)
     );
 
-    ram_wb CMP9_RAM_WB(
+    // ram_wb CMP9_RAM_WB(
+    //     .CLK_WB(clk_wb),
+    //     .RAM_ADDR(ram_addr),
+    //     .RAM_IN(ram_in),
+    //     .RAM_WEN(ram_wen),
+    //     .RAM_0(ram_0),
+    //     .RAM_1(ram_1),
+    //     .RAM_2(ram_2),
+    //     .RAM_3(ram_3),
+    //     .RAM_4(ram_4),
+    //     .RAM_5(ram_5),
+    //     .RAM_6(ram_6),
+    //     .RAM_7(ram_7),
+    //     .IO64_OUT(IO64_OUT)
+    // );
+
+    ram_dc_wb CMP10_RAM_DC_WB(
+        .CLK_DC(clk_dc),
         .CLK_WB(clk_wb),
-        .RAM_ADDR(ram_addr),
+        .RAM_ADDR(prom_out[7:0]),
         .RAM_IN(ram_in),
+        .IO65_IN(IO65_IN),
         .RAM_WEN(ram_wen),
-        .RAM_0(ram_0),
-        .RAM_1(ram_1),
-        .RAM_2(ram_2),
-        .RAM_3(ram_3),
-        .RAM_4(ram_4),
-        .RAM_5(ram_5),
-        .RAM_6(ram_6),
-        .RAM_7(ram_7),
-        .IO64_OUT(IO64_OUT)
-    );
+        .RAM_OUT(ram_out),
+        .IO64_OUT(IO64_OUT),
+    )
 
 endmodule
